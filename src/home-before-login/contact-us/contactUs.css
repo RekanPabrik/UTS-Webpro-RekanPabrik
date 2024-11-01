@@ -70,74 +70,98 @@ li a:hover::after {
   cursor: pointer;
 }
 
-.containerSatu {
-  text-align: center;
-  margin-top: 150px;
-}
-
-.containerSatu h1 {
-  color: #a86108;
-  font-size: 64px;
-  margin-bottom: 0px;
-}
-
-.containerSatu p {
-  color: #ad9f9f;
-  font-size: 24px;
-  margin-top: 0px;
-}
-
-.containerDua {
-  margin-top: 50px;
+.zero-section {
+  width: 100%;
+  height: 100vh;
+  background-color: #ecca9c;
+  margin-top: 100px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  color: #a86108;
+  text-align: center;
 }
 
-.companyNameContainer,
-.emailContainer,
-.passwordContainer,
-.confirmPassContainer {
-  margin-top: 20px;
+.zeroSection-h1 {
+  font-weight: bold;
+  font-size: 60px;
 }
 
-.companyNameContainer input,
-.emailContainer input,
-.passwordContainer input,
-.confirmPassContainer input {
-  width: 431px;
+.zeroSection-h1 span {
+  font-weight: bold;
+}
+
+.containerZeroSectionTXT h2 {
+  margin: 0px;
+}
+
+.zeroSection-TXT {
+  width: 900px;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.formContactUs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.nameContainer {
+  display: flex;
+  gap: 30px;
+}
+
+.firstName input,
+.lastName input {
+  width: 244px;
   height: 40px;
-  border: 2px solid #ad9f9f;
   border-radius: 8px;
+  border: 2px solid #ccc;
   font-size: 15px;
 }
 
-.companyNameContainer label,
+.emailContainer,
+.numberContainer,
+.massageContainer {
+  margin-top: 25px;
+}
+
+.emailContainer input,
+.numberContainer input {
+  width: 515px;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+}
+
+.massageContainer textarea {
+  width: 515px;
+  height: 200px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  padding: 10px;
+}
+
+.firstName label,
+.lastName label,
 .emailContainer label,
-.passwordContainer label,
-.confirmPassContainer label {
+.numberContainer label,
+.massageContainer label {
   font-size: 20px;
   font-weight: 500;
 }
 
-.imgContainer img {
-  width: 500px;
-}
-
-.btn-Container{
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-}
-
-.btn-Container button {
-  width: 225px;
-  height: 40px;
-  background-color: #a86108;
-  cursor: pointer;
-  border-radius: 8px;
-  border: transparent;
+.btn-submit {
+  width: 116px;
+  height: 37px;
+  font-size: 20px;
   color: white;
-  font-size: 16px;
+  background-color: #a86108;
+  border: transparent;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 .footer {
@@ -176,11 +200,4 @@ li a:hover::after {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 1200'%3E%3Cpath fill='%23a86108' d='M0 0v1200h1200V0zm294.287 235.913c47.53.535 94.35 33.325 96.387 90.088c1.016 50.475-42.971 88.921-97.632 90.088h-1.318c-47.057-.543-93.012-34.156-95.142-90.088c.671-49.913 42.627-88.904 97.705-90.088M804.199 474.39c52.255.324 101.572 15.826 142.09 57.13c42.106 46.96 55.624 111.71 57.129 177.538v299.414H830.859V729.419c-.384-52.302-18.3-115.877-87.524-117.993c-40.571.432-69.18 24.007-88.77 63.428c-5.348 12.688-6.118 27.273-6.372 41.821v291.797H475.708c.66-145.877 1.567-291.743 1.245-437.622c0-41.438-.399-69.34-1.245-83.716h172.485v73.535c14.641-20.823 30.879-40.571 52.66-56.47c29.545-21.085 65.036-29.168 103.346-29.809m-597.436 12.744h172.485v521.338H206.763z'/%3E%3C/svg%3E");
-}
-
-.error {
-  color: red;
-  font-size: 12px;
-  margin-top: 5px;
-  display: none;
 }

@@ -70,74 +70,196 @@ li a:hover::after {
   cursor: pointer;
 }
 
-.containerSatu {
-  text-align: center;
-  margin-top: 150px;
-}
-
-.containerSatu h1 {
-  color: #a86108;
-  font-size: 64px;
-  margin-bottom: 0px;
-}
-
-.containerSatu p {
-  color: #ad9f9f;
-  font-size: 24px;
-  margin-top: 0px;
-}
-
-.containerDua {
-  margin-top: 50px;
+.zero-section {
+  width: 100%;
+  height: 100vh;
+  background-color: #ecca9c;
+  margin-top: 100px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  color: #a86108;
 }
 
-.companyNameContainer,
-.emailContainer,
-.passwordContainer,
-.confirmPassContainer {
-  margin-top: 20px;
+.zero-section-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  gap: 500px;
 }
 
-.companyNameContainer input,
-.emailContainer input,
-.passwordContainer input,
-.confirmPassContainer input {
-  width: 431px;
-  height: 40px;
-  border: 2px solid #ad9f9f;
-  border-radius: 8px;
-  font-size: 15px;
+.img-zeroSection {
+  height: 400px;
 }
 
-.companyNameContainer label,
-.emailContainer label,
-.passwordContainer label,
-.confirmPassContainer label {
-  font-size: 20px;
+.zeroSection-h1 {
   font-weight: 500;
-}
-
-.imgContainer img {
+  font-size: 60px;
   width: 500px;
 }
 
-.btn-Container{
-  margin-top: 30px;
+.zeroSection-TXT {
+  width: 500px;
+  font-size: 20px;
+}
+
+.marginTop {
+  margin-top: 500px;
+}
+
+.zero-SectionBTN {
+  width: 130px;
+  height: 42px;
+  text-transform: capitalize;
+  background-color: #a86108;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  border: transparent;
+  font-size: 15px;
+}
+
+.container-satuTXT {
+  padding: 20px;
+}
+
+.container-satu-p {
+  width: 500px;
+}
+
+.test {
   display: flex;
   justify-content: center;
 }
 
-.btn-Container button {
-  width: 225px;
-  height: 40px;
-  background-color: #a86108;
-  cursor: pointer;
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  gap: 20px;
+}
+
+.slide {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  width: 294px;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+.company-info {
+  margin-top: 10px;
+}
+
+.company-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.job-count {
+  font-size: 14px;
+  color: gray;
+}
+
+.container-dua {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-dua-isi {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 200px;
+}
+
+.container-dua-img {
+  border-radius: 8px;
+}
+
+.container-dua-txt h1{
+  font-size: 40px;
+  width: 500px;
+  font-weight: 600;
+}
+
+.container-dua-txt p{
+  font-size: 24px;
+  font-weight: 300;
+  color: #828282;
+}
+
+.container-dua-btn {
+  width: 250px;
+  height: 50px;
   border-radius: 8px;
   border: transparent;
   color: white;
-  font-size: 16px;
+  background-color: #a86108;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.container-tiga {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-tiga-isi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 200px;
+}
+
+.container-tiga-img {
+  border-radius: 8px;
+}
+
+.container-tiga-txt h1{
+  font-size: 40px;
+  width: 600px;
+  font-weight: 600;
+}
+
+.container-tiga-txt p{
+  font-size: 24px;
+  width: 550px;
+  font-weight: 300;
+  color: #828282;
+}
+
+.container-tiga-btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: transparent;
+  color: white;
+  background-color: #a86108;
+  cursor: pointer;
+  font-size: 15px;
 }
 
 .footer {
@@ -155,7 +277,7 @@ li a:hover::after {
   width: 350px;
 }
 
-.icon {
+.icon{
   display: flex;
   gap: 15px;
 }
@@ -176,11 +298,4 @@ li a:hover::after {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 1200'%3E%3Cpath fill='%23a86108' d='M0 0v1200h1200V0zm294.287 235.913c47.53.535 94.35 33.325 96.387 90.088c1.016 50.475-42.971 88.921-97.632 90.088h-1.318c-47.057-.543-93.012-34.156-95.142-90.088c.671-49.913 42.627-88.904 97.705-90.088M804.199 474.39c52.255.324 101.572 15.826 142.09 57.13c42.106 46.96 55.624 111.71 57.129 177.538v299.414H830.859V729.419c-.384-52.302-18.3-115.877-87.524-117.993c-40.571.432-69.18 24.007-88.77 63.428c-5.348 12.688-6.118 27.273-6.372 41.821v291.797H475.708c.66-145.877 1.567-291.743 1.245-437.622c0-41.438-.399-69.34-1.245-83.716h172.485v73.535c14.641-20.823 30.879-40.571 52.66-56.47c29.545-21.085 65.036-29.168 103.346-29.809m-597.436 12.744h172.485v521.338H206.763z'/%3E%3C/svg%3E");
-}
-
-.error {
-  color: red;
-  font-size: 12px;
-  margin-top: 5px;
-  display: none;
 }

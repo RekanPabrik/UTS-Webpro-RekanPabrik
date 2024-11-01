@@ -3,17 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create Account HRD</title>
-    <link rel="stylesheet" href="./registerHRD.css" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./contactUs.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"
     />
   </head>
   <body>
@@ -55,54 +51,54 @@
     </header>
     <!-- navbar end -->
 
-    <!-- container 1 start -->
-    <div class="containerSatu">
-      <h1>welcome recruiter</h1>
-      <p>Sign up to your account to continue</p>
-    </div>
-    <!-- container 1 end -->
-
-    <!-- container 2 start -->
+    <!-- zero section start-->
     <section>
-      <div class="containerDua">
-        <div class="formContainer">
-          <form id="registrationForm">
-            <div class="companyNameContainer">
-              <label for="companyname">Company Name</label><br />
-              <input type="text" name="companyname" id="companyname" />
-              <span class="error" id="companynameError"></span>
-            </div>
-            <div class="emailContainer">
-              <label for="email">Email</label><br />
-              <input type="email" name="email" id="email" />
-              <span class="error" id="emailError"></span>
-            </div>
-            <div class="passwordContainer">
-              <label for="password">Password</label><br />
-              <input type="password" name="password" id="password" />
-              <span class="error" id="passwordError"></span>
-            </div>
-            <div class="confirmPassContainer">
-              <label for="confirmpassword">Confirm Password</label><br />
-              <input
-                type="password"
-                name="confirmpassword"
-                id="confirmpassword"
-              />
-              <span class="error" id="confirmpasswordError"></span>
-            </div>
-            <div class="btn-Container">
-              <button type="submit">Create Account</button>
-            </div>
-          </form>
-        </div>
-        <div class="imgContainer">
-          <img src="/src/assets/img/logoRekanPabrik.png" alt="" />
+      <div class="zero-section">
+        <div class="containerZeroSectionTXT">
+          <h1 class="zeroSection-h1">Contact our team</h1>
+          <h2>We’re Here to Help You!</h2>
+          <p class="zeroSection-TXT">
+            Whether you have questions about job opportunities, partnerships, or
+            just need more information about our services, we’re always ready to
+            assist you. At RekanPabrik, your success is our priority, and we’re
+            committed to providing the support you need.
+          </p>
         </div>
       </div>
     </section>
+    <!-- zero section end-->
 
-    <!-- container 2 end -->
+    <!-- container 1 start -->
+    <section>
+      <div class="formContactUs">
+        <form action="">
+          <div class="nameContainer">
+            <div class="firstName">
+              <label for="fname">First name:</label><br />
+              <input type="text" id="fname" name="fname" />
+            </div>
+            <div class="lastName">
+              <label for="lname">Last name:</label><br />
+              <input type="text" id="lname" name="lname" />
+            </div>
+          </div>
+          <div class="emailContainer">
+            <label for="email">email:</label><br />
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="numberContainer">
+            <label for="number">number:</label><br />
+            <input type="text" name="number" id="number" />
+          </div>
+          <div class="massageContainer">
+            <label for="number">massage:</label><br />
+            <textarea name="massage" id="massage"></textarea>
+          </div>
+        </form>
+        <button type="submit" class="btn-submit">Submit</button>
+      </div>
+    </section>
+    <!-- container 1 end -->
 
     <!-- footer start -->
     <footer class="footer">
@@ -110,7 +106,7 @@
         <h1 class="h1-address">Address</h1>
         <p class="p-address">
           Gedung Panehan Pasca Sarjana Lantai 1,Jl. Telekomunikasi Terusan Buah
-          Batu,Bandung - 40257, Indonesia
+          Batu, Bandung - 40257, Indonesia
         </p>
       </div>
       <div class="gambar">
@@ -132,7 +128,7 @@
       </div>
     </footer>
     <!-- foooter end -->
-    <script src="./registerHRD.js" type="module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     
+    <script src="./contactUs.js"></script>
   </body>
 </html>
