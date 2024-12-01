@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function loadTasks() {
-    $.getJSON("../../utils/daftarPabrik.json", function (data) {
+    $.getJSON("../../public/data/daftarPabrik.json", function (data) {
       if (data && Array.isArray(data)) {
         data.forEach((company) => {
           const slide = createdTask(company);
